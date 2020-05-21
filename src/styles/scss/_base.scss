@@ -10,6 +10,8 @@ html, body{
   hyphens: auto;
   color:$text-color;
   background-color: $light;
+  width: 100%;
+  overflow-x: hidden; 
 }
 
 
@@ -32,7 +34,7 @@ html, body{
 .paragraph-headline-s{
   font-size: $s;
   font-weight: $fw-bold;
-  color: $headline-color;
+  color: $darkest;
   margin-top: $m;
 }
 

@@ -24,11 +24,11 @@
 }
 
 .other-articles{
-  background-color: $dark;
+  background-color: rgba($color: $dark, $alpha: 0.4);
   margin: 0px;
   padding: 0%;
   @include noborder;
-
+height: 100%;
   h3{
     padding: $l $l 0px  $l;
   }
@@ -56,8 +56,12 @@
   color: $light;
   font-weight: $fw-normal;
   text-decoration: none;
-   
+  &:hover{
+    background-color: $cyan;
+    transition: background-color $tr-fast;
+  }
   @include button
+
 }
 
 

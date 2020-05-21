@@ -8,11 +8,7 @@
 
 
 
-html,body
-{
-    width: 100%;
-    overflow-x: hidden; 
-}
+
 
 header{
   background-image: url(/_stuff/bilder/open-air-tomorrowland-l.jpg);
@@ -30,6 +26,7 @@ header{
     padding: $basesize;
     font-weight: $fw-bold; 
     font-size: $l;
+    box-shadow: $shadow-l;
   }
 
   h2{
@@ -40,6 +37,7 @@ header{
     margin: $basesize;
     padding: $basesize;
     font-weight: $fw-bold; 
+    box-shadow: $shadow-l;
   }
 }
 section{
@@ -79,4 +77,158 @@ footer{
     color: rgba($color: $light, $alpha: .7);
     text-decoration: none;
   }
+}
+
+@media(min-width: 574px){
+  *{
+    font-size: $xxl;
+  }
+  header{
+    h1{
+   
+      bottom: 50%;
+     
+    }
+
+
+    h2{
+      bottom: 45%;
+    }
+  }
+}
+
+@media(min-width: 700px){
+
+  *{
+    font-size: $xxl;
+  }
+  header{
+
+    h1{
+      background-color: $light;
+      position: absolute;
+      bottom: 50%;
+      margin: $l;
+      padding: $l;
+      font-weight: $fw-bold; 
+      font-size: $xxl;
+      box-shadow: $shadow-l;
+    }
+
+
+    h2{
+      background-color: $cyan;
+      color: $headline-color-light;
+      position: absolute;
+      bottom: 37%;
+      margin: $l;
+      padding: $l;
+      font-size: $xl;
+      font-weight: $fw-bold; 
+      box-shadow: $shadow-l;
+    }
+  }
+  
+  section{
+    margin: $m;
+    border-bottom: solid 1px $cyan;
+  p{
+    padding-bottom: $m;
+    }
+  }
+ table{
+  th{
+    font-weight: $fw-normal;
+  }
+  tr{
+    @include showColumn;
+    }
+  }
+
+  .paragraph-headline-m{
+    font-size: $l;
+    font-weight: $fw-bold;
+    color: $darker;
+    margin-top: $m;
+  }
+  
+  .paragraph-headline-s{
+    font-size: $m;
+    font-weight: $fw-bold;
+    color: $darkest;
+    margin-top: $m;
+  }
+
+  .other-articles{
+    
+    p{
+      margin-top: $m;
+      margin-bottom: $m;
+    }
+  }
+}
+
+@media(min-width: 941px){
+  header{
+
+    h1{
+      background-color: $light;
+      position: absolute;
+      bottom: 50%;
+      margin: $l;
+      padding: $l;
+      font-weight: $fw-bold; 
+      font-size: $xxl;
+      box-shadow: $shadow-l;
+    }
+
+
+    h2{
+      background-color: $cyan;
+      color: $headline-color-light;
+      position: absolute;
+      bottom: 41%;
+      margin: $l;
+      padding: $l;
+      font-size: $xl;
+      font-weight: $fw-bold; 
+      box-shadow: $shadow-l;
+    }
+  }
+}
+
+@media(min-width:1024px){
+  section{
+    p{
+      max-width: 900px;
+    }
+  }
+
+.main-content{
+  display: grid;
+  grid-template-columns:  5% 70% 20% 5%;
+
+}
+
+.left-area{
+  width: 100%;
+  grid-column: 2/3;
+  grid-row:1;
+  box-shadow: $shadow-l;
+}
+.other-articles{
+  grid-row: 1;
+  grid-column: 3/4;
+}
+
+.buttons{
+border-radius: $xxs;
+font-size: $s;
+}
+  footer{
+    grid-row: 2;
+    grid-column:2/4;
+    box-shadow: $shadow-l;
+  }
+
 }

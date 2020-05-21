@@ -22,3 +22,23 @@
     display: none;
   }
 }
+@mixin showColumn{
+  
+  td:nth-child(2){
+    display: table-cell;
+    
+  }
+  td:nth-child(3){
+    display: table-cell;
+  }
+  th:nth-child(2){
+    display: table-cell;
+  }
+  th:nth-child(3){
+    display: table-cell;
+  }
+}
+
+@mixin transition{
+ transition:  $cyan-dark $tr-medium;
+}
