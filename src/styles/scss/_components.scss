@@ -9,7 +9,7 @@
 
     &:before {
       font-size: $xs;
-
+      color: rgba($color: $light, $alpha: 0.7);
       display: inline-block;
       margin-left: -$m;
       padding-right: $xxs;
@@ -22,3 +22,43 @@
     }
   }
 }
+
+.other-articles{
+  background-color: $dark;
+  margin: 0px;
+  padding: 0%;
+  @include noborder;
+
+  h3{
+    padding: $l $l 0px  $l;
+  }
+}
+
+.article-preview{
+  padding: $m;
+  padding-bottom: $xxl;
+}
+
+.section-3{
+  ol{
+    padding-top: $s;
+    padding-bottom: $m;
+  }
+
+  i{
+  color: $cyan-dark;
+  }
+  @include noborder;
+}
+
+.buttons{
+  background-color: $red;
+  color: $light;
+  font-weight: $fw-normal;
+  text-decoration: none;
+   
+  @include button
+}
+
+
+  

@@ -2,3 +2,23 @@
   padding: $xxs $xs;
   border-radius: $border-radius;
 }
+
+@mixin noborder{
+  border-bottom: none;
+}
+
+@mixin hideColumn{
+  
+  td:nth-child(2){
+    display: none;
+  }
+  td:nth-child(3){
+    display: none;
+  }
+  th:nth-child(2){
+    display: none;
+  }
+  th:nth-child(3){
+    display: none;
+  }
+}
