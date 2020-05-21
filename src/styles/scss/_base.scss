@@ -15,7 +15,26 @@ html, body{
 
 /* Headlines
 ############################################################################ */
+.paragraph-headline{
+  font-size: $l;
+  font-weight: $fw-bold;
+  color: $darker;
+  margin-top: $m;
+  margin-bottom: $m;
+}
+.paragraph-headline-m{
+  font-size: $m;
+  font-weight: $fw-bold;
+  color: $darker;
+  margin-top: $m;
+}
 
+.paragraph-headline-s{
+  font-size: $s;
+  font-weight: $fw-bold;
+  color: $headline-color;
+  margin-top: $m;
+}
 
 
 /* Images
